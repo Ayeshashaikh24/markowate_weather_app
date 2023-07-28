@@ -172,7 +172,7 @@ img {
 .main .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 7px;
   margin-top: 50px;
 }
 
