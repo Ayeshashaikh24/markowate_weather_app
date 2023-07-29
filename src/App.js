@@ -1,9 +1,8 @@
-import '@fortawesome/fontawesome-free/css/all.css';
-
+import "@fortawesome/fontawesome-free/css/all.css";
 
 import React, { useState, useEffect } from "react";
 
-import Sidebar from './Components/Sidebar'
+import Sidebar from "./Components/Sidebar";
 import Main from "./Components/Main";
 
 const App = () => {
@@ -24,12 +23,12 @@ const App = () => {
 
         const data = await response.json();
         setWeatherData(data);
-        console.log(data)
+        console.log(data);
       } catch (error) {
         console.error(error);
       }
     };
-console.log(weatherData)
+    console.log(weatherData);
     fetchWeatherData();
   }, []);
 

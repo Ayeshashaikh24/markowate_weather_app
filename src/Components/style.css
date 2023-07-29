@@ -14,8 +14,8 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  min-width: 1000px;
-  padding: 50px;
+  min-width: 400px;
+
   /* background: var(--primary-color); */
  
   background-size: cover;
@@ -28,11 +28,13 @@ img {
 }
 .wrapper {
   display: flex;
-  width: 1200px;
-  min-width: 900px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 420px;
   border-radius: 20px;
   overflow: hidden;
-  border:  17px solid rgb(214,215,218);
+  border: 17px solid rgb(214, 215, 218);
+  box-sizing: border-box;
  
 }
 .sidebar {
@@ -45,6 +47,59 @@ img {
   /* justify-content: space-between; */
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px;
+    margin-left: 20px;
+
+  }
+  .wrapper {
+    width: 100%;
+    flex-direction: column;
+     
+   
+  }
+  .sidebar {
+   
+    padding: 20px;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0px;
+    padding-bottom: 70px;
+   
+  }
+  .main nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .main nav .options {
+    gap: 10px;
+  }
+  .main .cards {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hourly-forecast {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main nav .units {
+    display: none;
+  }
+  .wrapper {
+    width: 100%;
+    border: 17px solid rgb(214, 215, 218);
+  }
+}
 
 .search ul {
   max-height: 300px;
@@ -159,7 +214,7 @@ img {
 }
 
 .main nav .units button {
-  width: 50px;
+  width: 30px;
   height: 30px;
   border-radius: 50%;
   color: #1a1a1a;
@@ -174,6 +229,7 @@ img {
   flex-wrap: wrap;
   gap: 7px;
   margin-top: 50px;
+
 }
 
 .cards .card {
