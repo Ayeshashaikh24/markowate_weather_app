@@ -6,11 +6,10 @@ const WeatherCard = ({ data, unit, convertToFahrenheit, dayOfWeek }) => {
     <div className="card">
       <p>{dayOfWeek}</p>
       <p>{data.datetime}</p>
-      <img
+      <img className="image-today"
         src={getIcon(data.icon)}
         alt={data.icon}
-        height="50px"
-        width="30px"
+      
       />
       <div className="temperature">
         <p>

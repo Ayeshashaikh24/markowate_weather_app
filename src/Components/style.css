@@ -23,8 +23,15 @@ body {
   transition: background-image 0.3s ease;
  
 }
-img {
-  width: 100%;
+.image_main {
+  width: 50px;
+  height:50px;
+margin-left: 25px;
+}
+.image-today{
+  width: 60px;
+  height: 60px;
+  margin-left: 3px;
 }
 .wrapper {
   display: flex;
@@ -84,10 +91,13 @@ img {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+   
   }
+  
   
   .hourly-forecast {
     justify-content: center;
+ 
   }
 }
 
@@ -248,9 +258,16 @@ img {
   font-size: 15px;
   font-weight: 600;
 }
+
+.hourly-data .card{
+  border-radius: 20px;
+ width: auto;
+ height: 140px;
+}
 .card .card-icon {
   width: 50%;
   margin: 0 auto;
+  
 }
 .card .day-temp {
   font-size: 12px;
@@ -311,6 +328,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+ 
 }
 
 .card {
@@ -318,6 +336,7 @@ img {
   padding: 20px;
   margin: 5px;
   width: 150px;
+
 }
 
 .hourly-data {
@@ -326,7 +345,9 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
+
 /* Add this CSS to your component or a separate CSS file */
 .search-bar {
   display: flex;

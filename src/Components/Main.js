@@ -118,7 +118,7 @@ const Main = ({ weatherData }) => {
       {selectedInterval === "today" && (
         <div className="hourly-forecast">
           {weatherData?.days?.slice(0, 1).map((day, index) => (
-            <div key={index}>
+            <div key={index}  className="card-with-border-radius">
               <div className="hourly-data">
                 {day?.hours?.map((hourData, hourIndex) => (
                   <WeatherCard
@@ -144,7 +144,7 @@ const Main = ({ weatherData }) => {
                 })}
               </h3>
 
-              <img src={getIcon(day.icon)} alt={day.icon} height="40px" />
+              <img src={getIcon(day.icon)} alt={day.icon} className="image_main" />
               <div className="temperature">
                 <p>
                   {unit === "C"
